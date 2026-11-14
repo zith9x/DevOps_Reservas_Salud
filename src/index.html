@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Horas Médicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Centro de Salud</h1>
+        <p>Sistema de reserva de horas médicas</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Información de atención</h2>
+            <p>Horario: <br>lunes a viernes, de 08:00 a 17:00 horas.<br>sábado, de 09:00 a 14:30 horas.</p>
+            <p>Estado del servicio: Disponible</p>
+        </section>
+
+        <section>
+            <h2>Formulario de reserva</h2>
+            <form>
+                <label for="nombre">Nombre del paciente:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="rut">Rut del paciente:</label>
+                <input type="text" id="rut" name="rut" required>
+                <label for="correo">Dirección  de correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="especialidad">Especialidad médica:</label>
+                <select id="especialidad" name="especialidad" required>
+                    <option value="">Seleccione una especialidad</option>
+                    <option value="general">Medicina general</option>
+                    <option value="pediatria">Pediatría</option>
+                    <option value="kinesiologia">Kinesiología</option>
+                </select>
+
+                <label for="fecha">Fecha de atención:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora de atención:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <button type="button">Realizar reserva</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto DevOps - IACC 2026</p>
+        <p>Formulario demostrativo.</p>
+    </footer>
+</body>
+</html>
